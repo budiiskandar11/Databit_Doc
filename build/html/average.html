@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Normal case: &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Databit-Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="licence.html">Licence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Databit-Documents</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Normal case:</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/average.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Average price</p>
+<div class="section" id="normal-case">
+<h1>Normal case:<a class="headerlink" href="#normal-case" title="Link permanen untuk headline ini">¶</a></h1>
+<p>= When the product is purchased by purchase order and leaves towards a customer with a delivery order.  We assume also
+that accounting entries are generated in real-time.</p>
+<ul class="simple">
+<li>When the products are received, the stock move gets the unit price and UoM of the purchase order in company currency.  The standard price of the product is updated with</li>
+</ul>
+<p>(qty available * standard price + incoming qty * purchase price) / (qty available + incoming qty)
+- In the stock journal, the accounting items will be generated based on this (price on move is price of purchase order)
+- When a delivery order is made, it is going out at cost price (= average price which was updated during incoming move)
+- When generating outgoing accounting entries, this is the total amount based on this average cost price</p>
+</div>
+<div class="section" id="case-of-production">
+<h1>Case of production:<a class="headerlink" href="#case-of-production" title="Link permanen untuk headline ini">¶</a></h1>
+<p>In case of produced goods, the incoming stock move of the finished product and accounting entries can not just invent a cost price like the sum of the cost price of the parts in the BoM, as cost methods tend to be a lot more complicated than this.
+When the finished good is produced, we will put the cost price from the product.</p>
+<p>In the product form there is a link next to the cost price where the user can update it.  This will also generate accounting entries as the stock will be valued differently.</p>
+</div>
+<div class="section" id="case-of-no-purchase-order">
+<h1>Case of no purchase order<a class="headerlink" href="#case-of-no-purchase-order" title="Link permanen untuk headline ini">¶</a></h1>
+<p>When no purchase order is given, the price on the stock move and generated entries is the cost price on the product</p>
+</div>
+<div class="section" id="returned-goods-scrap">
+<h1>Returned Goods / Scrap / ...<a class="headerlink" href="#returned-goods-scrap" title="Link permanen untuk headline ini">¶</a></h1>
+<p>For returning goods to supplier, the price on the original purchase order is put on the stock and account moves.  That way, this would have the same effect as cancelling the original in move.
+Scrap is an outgoing move at cost price.</p>
+</div>
+<div class="section" id="negative-stock">
+<h1>Negative stock<a class="headerlink" href="#negative-stock" title="Link permanen untuk headline ini">¶</a></h1>
+<p>If your stock is negative and you receive, the price of the product becomes the price on the purchase order.</p>
+</div>
+<div class="section" id="extra">
+<h1>Extra<a class="headerlink" href="#extra" title="Link permanen untuk headline ini">¶</a></h1>
+<ul class="simple">
+<li>standard price, costing method and valuation (real_time or manual) are properties.  This means it is possible to use the same product in different companies with different price, valuation and costing methods.</li>
+<li>UoMs: On the stock move, the price is in units of the stock move, so this will get converted to the product UoM and reverse</li>
+<li>Currency: On the stock move, the currency is the company currency</li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Budi Iskandar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

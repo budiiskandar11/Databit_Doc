@@ -4,11 +4,13 @@
 Selamat Datang di Databit Documentation
 #######################################
 
+Daftar Isi
+==========
 .. toctree::
    :maxdepth: 2
-    licence
-    help
    
+   Finance
+  
 
 Index dan Daftar Isi
 ====================
