@@ -6,8 +6,8 @@ Selamat Datang di Databit Documentation
 
 .. toctree::
    :maxdepth: 2
-   licence
-   help
+    licence
+    help
    
 
 Index dan Daftar Isi
