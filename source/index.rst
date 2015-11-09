@@ -1,23 +1,17 @@
-.. Databit documentation master file, created by
-   sphinx-quickstart on Mon Nov  9 21:08:20 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Databit-Documents Documentation master file.
 
-Selamat Datang di Databit's dokumentasi!
-========================================
-
-Contents:
+#######################################
+Selamat Datang di Databit Documentation
+#######################################
 
 .. toctree::
    :maxdepth: 2
-
    licence
    help
+   
 
-Indices and tables
-==================
+Index dan Daftar Isi
+====================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
-
