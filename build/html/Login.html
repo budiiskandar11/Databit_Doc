@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Pencarian &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  <title>Login &mdash; dokumentasi Databit-Documents 0.0.1</title>
   
 
   
@@ -30,7 +30,8 @@
   
 
   
-    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/> 
+    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/>
+        <link rel="prev" title="Mengenal Odoo" href="Pendahuluan.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +66,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -80,11 +81,11 @@
             
             
                 <p class="caption"><span class="caption-text">Pendahuluan</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Pendahuluan.html">Mengenal Odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Pendahuluan.html#mengenal-databit">Mengenal Databit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Login.html">Login</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Login.html#tampilan-umum">Tampilan Umum</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#tampilan-umum">Tampilan Umum</a></li>
 </ul>
 
             
@@ -115,8 +116,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Login</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Login.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -125,23 +130,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="login">
+<h1>Login<a class="headerlink" href="#login" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Untuk mengakses sistem Odoo 8, dapat dilakukan dengan menggunakan Komputer
+maupun Smartphone asalkan terhubung dengan jaringan internet. Odoo bersifat web-base application,
+maka untuk mengaksesnya pengguna harus menggunakan web browser seperti Chrome, Safari, Mozilla dan Internet Explorer.
+Khusus untuk Internet Explorer, Odoo akan bekerja baik pada IE versi 10 keatas.</p>
+<p>pada web browser ketik ip address atau domain Odoo Anda seperti dibawah ini</p>
+<div class="highlight-python"><div class="highlight"><pre>www.erp.company.com:8069 atau 192.168.1.10:8069
+atau sesuai dengan settingan Sistem Administrator Anda
+</pre></div>
+</div>
+<p>maka akan muncul tampilan sebagai berikut :</p>
+<img alt="_images/login.png" src="_images/login.png" />
+<div class="highlight-python"><div class="highlight"><pre>Masukan Masukan User Name dan Password
+</pre></div>
+</div>
+</div>
+<div class="section" id="tampilan-umum">
+<h1>Tampilan Umum<a class="headerlink" href="#tampilan-umum" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Setelah user berhasil login ke dalam sistem, maka tampilan pertama kali yang akan muncul seperti gambar di bawah ini :</p>
+<img alt="_images/tampilan_umum.png" src="_images/tampilan_umum.png" />
+<dl class="docutils">
+<dt>Keterangan :</dt>
+<dd><ol class="first last arabic simple">
+<li>Menu Utama, yang merupakan pembagian fungsi secara umum sesuai dengan kategori pekerjaan. Menu utama ini merupakan pintu masuk untuk melakukan kegiatan berikutnya.</li>
+<li>Search bar , yang merupakan area untuk melakukan pencarian sesuai yang relevan dengan fungsi dan akses dari seorang user.</li>
+<li>Pesan Umum, yang digunakan untuk mengirimkan pesan dan membaca pesan.</li>
+<li>Nama dan Foto, merupakan keterangan pengguna yang sedang login</li>
+<li>Sub Menu, merupakan turunan dari Menu Utama</li>
+<li>Working Area, tempat user bekerja dalam sistem.</li>
+</ol>
+</dd>
+</dl>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Pendahuluan.html" class="btn btn-neutral" title="Mengenal Odoo" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -180,7 +214,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/translations.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -196,14 +229,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

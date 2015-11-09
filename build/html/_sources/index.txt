@@ -4,12 +4,20 @@
 Selamat Datang di Databit Documentation
 #######################################
 
-Daftar Isi
-==========
+Dokumen ini berisi mengenai cara penggunaan Odoo versi 8, 
+dengan customisasi yang telah dibuat oleh `Databit
+<http://www.databit.co.id/>`_. 
+
+:ref:`mulai`
+
+.. _mulai:
+
 .. toctree::
    :maxdepth: 2
+   :caption: Pendahuluan
    
-   Finance
+   Pendahuluan
+   Login
   
 
 Index dan Daftar Isi
