@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Pencarian &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  <title>Messaging &mdash; dokumentasi Databit-Documents 0.0.1</title>
   
 
   
@@ -65,7 +65,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -87,25 +87,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Login.html#tampilan">Tampilan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Login.html#messaging">Messaging</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Company Setting</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Setting.html">Odoo Setting</a></li>
-</ul>
 <p class="caption"><span class="caption-text">Finance dan Accounting</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Finance.html">Finance Managemement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Finance.html#faktur-pajak">Faktur Pajak</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Purchase Management</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Purchase.html">Purchase Management</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Sales Management</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Sales.html">Sales</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Human Resource Management</span></p>
-<ul class="simple">
 </ul>
 
             
@@ -136,8 +121,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Messaging</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/messaging.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -146,19 +135,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="messaging">
+<h1>Messaging<a class="headerlink" href="#messaging" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Messaging adalah fitur baru di Odoo 8, yang bertujuan untuk menyimpan semua komunikasi bisnis dalam sistem ERP, dibandingkan eksternal seperti dalam klien email yang terpisah. Fitur ini memingkinkan pengguna untuk melakukan diskusi baik dalam internal perusahaan maupun dengan pihak lain seperti pelanggan dan mitra. Pesan juga berfungsi sebagai daftar to do , yang harus dikerjakan atau di follow up, berdasarkan pada arus komunikasi,
+dan kelompok diskusi, mailing list fungsionalitas untuk tim.</p>
+<p>Gambar berikut ini menampilkan sub menu dari fungsi Messaging.</p>
+<img alt="_images/messaging.png" src="_images/messaging.png" />
+<dl class="docutils">
+<dt>Keterangan :</dt>
+<dd><ol class="first last arabic simple">
+<li><strong>Inbox</strong>. Inbox ini akan menampilkan semua komunikasi yang belum dibaca oleh pengguna. Pesan yang sudah ditandai sebagai done dan to do tidak ditampilkan di sini. Kotak ini harus selalu di simpan dalam keadaan kosong, yang menandakan bahwa pengguna telah membaca Pesan dan menandainya dengan done atau to do. Kotak masuk kosong merupakan kondisi ideal di mana tidak ada komunikasi bisnis yang tidak disadari oleh pengguna.</li>
+<li><strong>To : Me</strong>. Semua pesan yang ditujukan langsung kepada pengguna akan muncul disini. Pesan di sini harus juga idealnya dibaca dan ditandai done atau to do, dan dibersihkan dari pandangan.</li>
+<li><strong>To-Do</strong>. Semua pesan dari Inbox yang sudah ditandai dengan to do akan ditampilkan disini, sebagai daftar pekerjaan yang harus dilakukan oleh pengguna. Apabila daftar pekerjaan tersebut telah dilakukan, maka pengguna harus menandainya dengan done.</li>
+<li><strong>Archives</strong>. Semua pesan yang sudah ditandai dengan done, akan disimpan sebagai arsip yang memungkinkan untuk penelusuran komunikasi bisnis sebelumnya.</li>
+<li><strong>Calendar</strong>. Calendar ini akan menampilkan jadwal meeting baik untuk pengguna maupun untuk rekan kerja internal.</li>
+<li><strong>Groups</strong>. Groups ialah kumpulan pesan secara kolaboratif. Apabila pengguna bergabung dalam kelompok, maka semua komunikasi untuk kelompok tersebut akan terlihat dan pengguna juga dapat mengirimkan pesan terhadap kelompok untuk dilihat oleh anggota kelompok lain. Fitur ini digunakan untuk melakukan diskusi atau memberikan pengumuman secara langsung kepada karyawan.</li>
+<li><strong>Join Group</strong>. Tempat untuk bergabung dengan group dalam perusahaan atau membuat group baru, jika mempunyai hak akses. Setiap kali join di sebuah Group, maka akan muncul menu baru dibawah Groups.</li>
+<li><strong>Unread Message</strong>. Merupakan jumlah pesan yang belum dibaca oleh pengguna.</li>
+</ol>
+</dd>
+</dl>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
@@ -201,7 +199,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/translations.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -217,14 +214,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

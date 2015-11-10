@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Pencarian &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  <title>Odoo Setting &mdash; dokumentasi Databit-Documents 0.0.1</title>
   
 
   
@@ -30,7 +30,9 @@
   
 
   
-    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/> 
+    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/>
+        <link rel="next" title="Finance Managemement" href="Finance.html"/>
+        <link rel="prev" title="Login" href="Login.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +67,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -88,8 +90,16 @@
 <li class="toctree-l1"><a class="reference internal" href="Login.html#messaging">Messaging</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Company Setting</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Setting.html">Odoo Setting</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Odoo Setting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#company-setting">Company Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-setting">User Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accounting-setting">Accounting Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#product-setting">Product Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#partner-setting">Partner Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#warehouse-setting">Warehouse Setting</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Finance dan Accounting</span></p>
 <ul>
@@ -136,8 +146,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Odoo Setting</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Setting.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -146,23 +160,68 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="odoo-setting">
+<h1>Odoo Setting<a class="headerlink" href="#odoo-setting" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Odoo Setting ialah bagian pertama yang akan kita bahas dalam manual guide ini.</p>
+<p>Mari kita Mulai</p>
+<div class="section" id="company-setting">
+<h2>Company Setting<a class="headerlink" href="#company-setting" title="Link permanen untuk headline ini">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Catatan</p>
+<p class="last">Untuk Pelanggan Databit-Odoo On Demand, Company Setting akan dilakukan oleh Databit Team
+sesuai dengan data yang diterima</p>
+</div>
+<p>Untuk melakukan Company Setting dapat diakses melalui menu :</p>
+<div class="highlight-python"><div class="highlight"><pre>Menu Settings &gt; Companies &gt; Companies
+</pre></div>
+</div>
+<p>maka akan muncul tampilan seperti ini</p>
+<img alt="_images/company.png" src="_images/company.png" />
+<div class="highlight-python"><div class="highlight"><pre>Keterangan :
+ 1. Isi Nama Perusahaan dan masukan logo pada field image
+ 2. Pada bagian General Information :
+    - isi Nomor NPWP
+    - kode transaksi (diisin dengan 0)
+    - kode status diisi dengan 1, jika merupakan perusahaan umum
+    - isi alamat perusahaan
+    - isi Company Tagline dengan motto perusahaan jika ada
+    - masukan informasi website perusahaan
+    - isi nomor telp, fax, dan email perusahaan
+ 3. Pada Bagian Configuration
+    - isi Currency dengan Mata Uang Dasar Perusahaan dalam hal ini : IDR
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-setting">
+<h2>User Setting<a class="headerlink" href="#user-setting" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="accounting-setting">
+<h2>Accounting Setting<a class="headerlink" href="#accounting-setting" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="product-setting">
+<h2>Product Setting<a class="headerlink" href="#product-setting" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="partner-setting">
+<h2>Partner Setting<a class="headerlink" href="#partner-setting" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="warehouse-setting">
+<h2>Warehouse Setting<a class="headerlink" href="#warehouse-setting" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Finance.html" class="btn btn-neutral float-right" title="Finance Managemement" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Login.html" class="btn btn-neutral" title="Login" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -201,7 +260,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/translations.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -217,14 +275,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

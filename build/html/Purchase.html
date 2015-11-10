@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Purchase Management &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/>
+        <link rel="next" title="Sales" href="Sales.html"/>
+        <link rel="prev" title="Finance Managemement" href="Finance.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Databit-Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Pendahuluan</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Pendahuluan.html">Mengenal Odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pendahuluan.html#mengenal-databit">Mengenal Databit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Login.html">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Login.html#tampilan">Tampilan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Login.html#messaging">Messaging</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Finance dan Accounting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Finance.html">Finance Managemement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finance.html#faktur-pajak">Faktur Pajak</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Purchase Management</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Purchase Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purchase-requisition">Purchase Requisition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#request-for-quotation">Request for Quotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supplier-quotation-comparison">Supplier Quotation Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#purchase-order">Purchase Order</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Sales Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Sales.html">Sales</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Human Resource Management</span></p>
+<ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Databit-Documents</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Purchase Management</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Purchase.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="purchase-management">
+<h1>Purchase Management<a class="headerlink" href="#purchase-management" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Modul ini digunakan untuk melakukan proses pembelian baik pembelian barang, maupun pembelian jasa.
+Modul asli dari Odoo sudah dapat mengakomodir proses pembelian secara umum, namun Databit mencoba
+menambahkan beberapa fitur antara lain :</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Penambahan Fitur approval pada Purchase Request dan Purchase Order</li>
+<li>Penambahan Fitur pembayaran Down Payment pada PO</li>
+<li>Penambahan Fitur Tipe Pembelian (stock, consumable, jasa),</li>
+<li>Perubahan tampilan Print Out PO</li>
+<li>Serta penambahan field-field lain yang cukup penting</li>
+</ol>
+</div></blockquote>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>This is Note</p>
+<ul class="last simple">
+<li>Hore</li>
+</ul>
+</div>
+<p>Menu dan Submenu yang terdapat pada Purchase Management yaitu:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Material Request. Pengguna dapat melakukan permintaan barang kepada staff gudang atau kepada staf purchasing.</li>
+<li>MR Item. Menu ini menampilkan daftar rincian permintaan barang. Menu ini digunakan untuk melakukan penggabungan beberapa MR menjadi MR-Merge apabila ditemuka permintaan barang yang sama atau supplier yang sama.</li>
+<li>MR Merge. Hasil dari penggabungan MR dapat dilihat di menu ini.</li>
+<li>Purchase Requisition. Merupakan permintaan pembelian yang dilakukan baik oleh user maupun oleh staf gudang. Semua PR akan diproses menjadi Purchase Order dan semua MR akan diproses menjadi PR sebelum dilanjutkan dengan penerbitan PO.</li>
+<li>Quotation. Merupakan kumpulan dari penawaran-penawaran rekanan yang diinput ke dalam sistem. Daftar penawaran ini dapat digunakan selain sebagai acuan untuk pembuatan PO maupun sebagai histori data.</li>
+<li>Purchase Order. Setiap PO yang sudah diterbitkan akan dikumpulkan di menu ini agar bisa dilacak penerimaan dan pembayarannya.</li>
+<li>Suppliers. Daftar semua rekanan pembekal akan dikumpulkan dimenu ini.</li>
+<li>Incoming Shipment. Proses penerbitan PO akan dilanjutkan oleh proses penerimaan barang (good receive). Seorang staf purchase dapat melihat apakah barang yang dipesan, sudah diterima oleh staf warehouse atau belum. Menu ini sangat mempermudah pengguna untuk melakukan penelusuran terhadap PO yang diterbitkan.</li>
+<li>Incoming Products. Untuk melihat daftar barang yang akan diterima oleh staf warehouse.</li>
+<li>On Draft Invoice. Seorang staff purchase dapat melihat status pembayaran dari PO yang dia terbitkan. Namun demikian staf purchase tidak bisa memvalidasi draft invoice tersebut dikarenakan bukan menjadi kewenangannya.</li>
+<li>On Purchase Order Line. Sama seperti point 10, seorang staff dapat melihat status invoice dari daftar product di PO.</li>
+<li>On Incoming Shipment. Seorang staff purchase dapat melihat status invoice berdasarkan Penerimaan barang.</li>
+<li>Product by Category. Daftar master product dapat dikelompokan berdasarkan category productnya.</li>
+<li>Products. ialah daftar product secara keseluruhan, pengguna bisa menambahkan daftar produk melalui menu ini.</li>
+<li>Configuration-Address Book. Merupakan menu untuk melakukan konfigurasi terhadap daftar supplier</li>
+<li>Configuration-product. Merupakan menu untuk melakukan konfigurasi dan menambakan category product.</li>
+</ol>
+</div></blockquote>
+<div class="section" id="purchase-requisition">
+<h2>Purchase Requisition<a class="headerlink" href="#purchase-requisition" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="request-for-quotation">
+<h2>Request for Quotation<a class="headerlink" href="#request-for-quotation" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="supplier-quotation-comparison">
+<h2>Supplier Quotation Comparison<a class="headerlink" href="#supplier-quotation-comparison" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="purchase-order">
+<h2>Purchase Order<a class="headerlink" href="#purchase-order" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Sales.html" class="btn btn-neutral float-right" title="Sales" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Finance.html" class="btn btn-neutral" title="Finance Managemement" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Budi Iskandar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -9,6 +9,7 @@ dengan customisasi yang telah dibuat oleh `Databit
 <http://www.databit.co.id/>`_. 
 
 :ref:`mulai`
+:ref:`Finance`
 
 .. _mulai:
 
@@ -18,6 +19,41 @@ dengan customisasi yang telah dibuat oleh `Databit
    
    Pendahuluan
    Login
+   
+.. _setting: 
+.. toctree::
+   :maxdepth: 2
+   :caption: Company Setting
+   
+   Setting
+
+.. _Finance: 
+.. toctree::
+   :maxdepth: 2
+   :caption: Finance dan Accounting
+     
+   Finance
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Purchase Management
+     
+   Purchase
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Sales Management
+     
+   Sales
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Human Resource Management
+     
+   HR
+   
+ 
+   
   
 
 Index dan Daftar Isi
