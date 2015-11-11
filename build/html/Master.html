@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Company Setting &mdash; dokumentasi Databit-Documents 0.0.1</title>
+  <title>Master Data &mdash; dokumentasi Databit-Documents 0.0.1</title>
   
 
   
@@ -32,7 +32,7 @@
   
     <link rel="top" title="dokumentasi Databit-Documents 0.0.1" href="index.html"/>
         <link rel="next" title="Finance Managemement" href="Finance.html"/>
-        <link rel="prev" title="Login" href="Login.html"/> 
+        <link rel="prev" title="Company Setting" href="Setting.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -90,11 +90,15 @@
 <li class="toctree-l1"><a class="reference internal" href="Login.html#messaging">Messaging</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Company Setting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Setting.html">Company Setting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Master Data</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Company Setting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Company Setting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-setting">User Setting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#accounting-setting">Accounting Setting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Master Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#master-bahasa">Master Bahasa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#master-partner">Master Partner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#master-product-category">Master Product Category</a></li>
 </ul>
 </li>
 </ul>
@@ -143,11 +147,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Company Setting</li>
+    <li>Master Data</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Setting.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Master.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,96 +161,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="company-setting">
-<h1>Company Setting<a class="headerlink" href="#company-setting" title="Link permanen untuk headline ini">¶</a></h1>
-<p>Odoo Setting ialah bagian pertama yang akan kita bahas dalam manual guide ini.</p>
-<p>Mari kita Mulai</p>
-<div class="section" id="id1">
-<h2>Company Setting<a class="headerlink" href="#id1" title="Link permanen untuk headline ini">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Catatan</p>
-<p class="last">Untuk Pelanggan Odoo-Databit On Demand, Company Setting akan dilakukan oleh Databit Team
-sesuai dengan data yang diterima</p>
-</div>
-<p>Untuk melakukan Company Setting dapat diakses melalui menu :</p>
-<div class="highlight-python"><div class="highlight"><pre>Menu Settings &gt; Companies &gt; Companies atau klik pada logo Odoo disebelah kiri atas
+  <div class="section" id="master-data">
+<h1>Master Data<a class="headerlink" href="#master-data" title="Link permanen untuk headline ini">¶</a></h1>
+<p>Pada bagian ini kita akan melakukan setting Data Master.</p>
+<div class="section" id="master-bahasa">
+<h2>Master Bahasa<a class="headerlink" href="#master-bahasa" title="Link permanen untuk headline ini">¶</a></h2>
+<p>Setting Bahasa hanya digunakan untuk format template tanggal dan angka. Untuk bahasa, kami sarankan tetap menggunakan
+bahasa inggris karena lebih general.</p>
+<p>Untuk melakukan setting Bahasa, dapat diakses melalui :</p>
+<div class="highlight-python"><div class="highlight"><pre>Menu &gt; Settings &gt; Translation &gt; Language &gt; pilih English
 </pre></div>
 </div>
-<p>maka akan muncul tampilan seperti ini</p>
-<img alt="_images/company.png" src="_images/company.png" />
-<div class="highlight-python"><div class="highlight"><pre>Keterangan :
- 1. Isi Nama Perusahaan dan masukan logo pada field image
- 2. Pada bagian General Information :
-    - isi Nomor NPWP
-    - kode transaksi (diisin dengan 0)
-    - kode status diisi dengan 1, jika merupakan perusahaan umum
-    - isi alamat perusahaan
-    - isi Company Tagline dengan motto perusahaan jika ada
-    - masukan informasi website perusahaan
-    - isi nomor telp, fax, dan email perusahaan
- 3. Pada Bagian Configuration
-    - isi Currency dengan Mata Uang Dasar Perusahaan dalam hal ini : IDR
+<p>maka akan muncul tampilan seperti ini :</p>
+<img alt="_images/language.png" src="_images/language.png" />
+<div class="highlight-python"><div class="highlight"><pre>Lakukan setting language seperti gambar diatas.
 </pre></div>
 </div>
 </div>
-<div class="section" id="user-setting">
-<h2>User Setting<a class="headerlink" href="#user-setting" title="Link permanen untuk headline ini">¶</a></h2>
-<p>User setting digunakan untuk menambah, mengurangi atau merubah hak akses seorang pengguna.</p>
-<div class="highlight-python"><div class="highlight"><pre>Menu Settings &gt; Users &gt; Users
-</pre></div>
+<div class="section" id="master-partner">
+<h2>Master Partner<a class="headerlink" href="#master-partner" title="Link permanen untuk headline ini">¶</a></h2>
 </div>
-<p>Tampilan yang akan muncul seperti ini :</p>
-<img alt="_images/user.png" src="_images/user.png" />
-<div class="highlight-python"><div class="highlight"><pre>Keterangan :
- 1. Name diisi dengan Nama Users
- 2. Email diisi dengan alamat email users sebagai user login
- 3. Pada Bagian Configuration
-    - isi Currency dengan Mata Uang Dasar Perusahaan dalam hal ini : IDR
-</pre></div>
-</div>
-<div class="admonition warning">
-<p class="first admonition-title">Peringatan</p>
-<p class="last">Pada tahap awal installasi, user akses atau group akses hanya akan terbatas pada sistem administrasi.
-User group akan muncul setelah installasi modul lainnya.</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Catatan</p>
-<p class="last">Pembuatan user group hanya bisa dilakukan oleh sistem administrator yang mengerti Odoo secara teknis.
-Bagi pelanggan Odoo-Databit On Demand, user group akan disetting sesuai dengan profile customer.</p>
-</div>
-</div>
-<div class="section" id="accounting-setting">
-<h2>Accounting Setting<a class="headerlink" href="#accounting-setting" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Sebelum melakukan setting accounting, hal pertama yang harus dilakukan ialah menginstall modul dos_accounting atau Accounting</p>
-<div class="highlight-python"><div class="highlight"><pre>Menu Settings &gt; Modules &gt; Local Modules &gt; dos_accounting
-</pre></div>
-</div>
-<p>setelah installasi selesai, lakukan setting accounting dengan mengakses menu :</p>
-<div class="highlight-python"><div class="highlight"><pre>Menu Settings &gt; Configuration &gt; Accounting
-</pre></div>
-</div>
-<p>maka akan muncul tampilan sebagai berikut :</p>
-<img alt="_images/account_setting.png" src="_images/account_setting.png" />
-<p>Chart of Account</p>
-<div class="highlight-python"><div class="highlight"><pre>1. Pilih &#39;Indonesia - Chart of Account&#39;
-2. Isi Sales Tax 10%
-3. Isi Purchase Tax 10%
-</pre></div>
-</div>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">Chart of Account masing-masing Company dapat berbeda sesuai dengan karakter bisnis perusahaan.
-Databit menyediakan service untuk pembuatan Chat of Account.</p>
-</div>
-<p>No Fiscal Year Defined for This Company</p>
-<div class="highlight-python"><div class="highlight"><pre>1. Date Range akan diisi otomatis oleh system, dengan default Januari - Desember
-2. Period : pilih Monthly
-</pre></div>
-</div>
-<p>Accounting &amp; Finance</p>
-<div class="highlight-python"><div class="highlight"><pre>1. Default Company Currency, pilih IDR
-</pre></div>
-</div>
+<div class="section" id="master-product-category">
+<h2>Master Product Category<a class="headerlink" href="#master-product-category" title="Link permanen untuk headline ini">¶</a></h2>
 </div>
 </div>
 
@@ -260,7 +196,7 @@ Databit menyediakan service untuk pembuatan Chat of Account.</p>
         <a href="Finance.html" class="btn btn-neutral float-right" title="Finance Managemement" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Login.html" class="btn btn-neutral" title="Login" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Setting.html" class="btn btn-neutral" title="Company Setting" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

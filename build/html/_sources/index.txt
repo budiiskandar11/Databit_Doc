@@ -27,6 +27,13 @@ dengan customisasi yang telah dibuat oleh `Databit
    
    Setting
 
+.. _Master: 
+.. toctree::
+   :maxdepth: 2
+   :caption: Master Data
+     
+   Master
+
 .. _Finance: 
 .. toctree::
    :maxdepth: 2
